@@ -1,0 +1,54 @@
+@import '../../assets/styles/helpers/_variables.scss';
+@import '../../assets/styles/helpers/_utils.scss';
+@import '../../assets/styles/helpers/_responsive.scss';
+
+.rightbox {
+  position: relative;
+  top: 0;
+  padding-right: 0;
+  margin-right: 0;
+  background-color: $gray5; 
+  @include tablet {
+    width: width-column(12, 31);
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  &__loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: $gray5;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .loading__rotating {
+    animation-name: rotating;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    z-index: 1000;
+    background: url('../../assets/images/loading-gray.svg') no-repeat 0 0;
+    background-size: 100% auto;
+  }
+
+  &.is-loading {
+    .loading-generic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      background-color: transparent;
+      z-index: 2;
+
+      .loading__rotating {
+        margin-bottom: 50%;
+      }
+    }
+  }
+}

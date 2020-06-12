@@ -1,0 +1,120 @@
+@import '../../assets/styles/helpers/_variables.scss';
+@import '../../assets/styles/helpers/_utils.scss';
+@import '../../assets/styles/helpers/_responsive.scss';
+
+.complete-card {
+  box-sizing: border-box;
+  border: 1px $gray6 solid;
+  border-radius: 12px;
+  display: flex;
+  position: relative;
+
+  .complete-hidden {
+    display: none;
+    color: white;
+    background-color: $green;
+    padding: 6px 16px;
+    border-radius: 12px;
+  }
+  
+  .complete-card__control {
+    width: 100%;
+    position: relative;
+    padding: 32px 24px;
+    min-height: 20px;
+    user-select: none;
+    cursor: pointer;
+    display: block;
+    @include tablet {
+      padding: 62px width-column(1, 7) 32px;
+    }
+
+    .complete {
+      display: block;
+      font-family: $font-lato;
+      font-weight: $font-bold;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: $gray3;
+
+      i {
+        display: inline-block;
+        margin-left: 8px;
+      }
+    }
+
+    img {
+      height: 40px;
+      width: 40px;
+      @include tablet {
+        height: 48px;
+        width: 48px;
+      }
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    span {
+      display: block;
+      font-family: $font-lato;
+      font-weight: $font-regular;
+      font-size: 20px;
+      line-height: 28px;
+      color: $gray1;
+      margin-bottom: 24px;
+      @include tablet {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      @include desktop {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+
+  &.is-completed {
+    border: 1px $green solid;
+
+    .complete {
+      display: none;
+    }
+
+    .complete-hidden {
+      display: inline-block;
+      font-family: $font-lato;
+      font-weight: $font-bold;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .complete-card__control {
+      padding-bottom: 26px;
+      @include tablet {
+        padding-bottom: 32px;
+      }
+    }
+  }
+
+  &.is-amount {
+    &::before {
+      position: absolute;
+      @include icon-font;
+      content: '\e91e';
+      width: 18px;
+      height: 21px;
+      font-size: 20px;
+      top: 16px;
+      right: 16px;
+      color: $orange;
+    }
+  }
+}

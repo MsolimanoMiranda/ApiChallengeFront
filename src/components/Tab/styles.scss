@@ -1,0 +1,39 @@
+@import '../../assets/styles/helpers/_variables.scss';
+@import '../../assets/styles/helpers/_utils.scss';
+@import '../../assets/styles/helpers/_responsive.scss';
+
+.tab {
+  &__option {
+    display: inline-block;
+    font-family: $font-lato;
+    font-weight: $font-regular;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $gray1;
+    min-width: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 12px;
+    border-bottom: 2px $gray4 solid;
+    background: #fff;
+    transition: color 0.3s, border 0.3s;
+    
+    &:hover {
+      color: $lila2;
+    }
+
+    &.is-active {      
+      border-bottom: 2px $red solid;
+      color: $red;
+    }    
+  }
+
+  &__content {
+    padding: 20px 0;
+    display: none;
+
+    &.is-active { display: block; }
+  }
+}

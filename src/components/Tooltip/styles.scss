@@ -1,0 +1,84 @@
+@import '../../assets/styles/helpers/_variables.scss';
+@import '../../assets/styles/helpers/_utils.scss';
+@import '../../assets/styles/helpers/_responsive.scss';
+
+.tooltip {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 2px 12px rgba(63, 76, 130, 0.1), 0px 0px 4px rgba(77, 103, 205, 0.1);
+  z-index: 90;
+  background-color: white;
+  bottom: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $gray2;
+  transition: max-height 2s, opacity 0.5s;
+  opacity: 0;
+  pointer-events: none;
+  text-align: left;
+
+  &__content {
+    padding: 16px 16px 21px 44px;
+    box-sizing: border-box;
+  }
+
+  &::before {
+    content: '\e90d';
+    @include icon-font;
+    color: $orange;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 20px;
+  }
+
+  &::after {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: rotate(135deg);
+  }
+
+  p, span {
+    margin: 0;
+    padding: 0;
+  }
+
+  &.is-box {
+    .tooltip__content { padding: 16px; }
+    &::before { display: none; }
+  }
+}
+
+.is-tooltip {
+  position: relative;
+
+  &-open {
+    .tooltip {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    input {color: $red;}
+  }
+}
+
+.radio.is-card .tooltip {
+  font-family: $font-roboto;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  min-width: 210px;
+  bottom: 92%;
+  cursor: default;
+}
+
+.pr {
+  position: relative;
+}

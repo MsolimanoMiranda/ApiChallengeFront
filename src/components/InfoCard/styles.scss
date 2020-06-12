@@ -1,0 +1,73 @@
+@import '../../assets/styles/helpers/_variables.scss';
+@import '../../assets/styles/helpers/_utils.scss';
+@import '../../assets/styles/helpers/_responsive.scss';
+
+.info-card {
+  padding: 32px;
+  border: 1px $gray6 solid;
+  border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 16px;
+  @include tablet {
+    width: width-column(7, 23);
+    margin-right: width-column(1, 23);
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 109px;
+    height: 100px;
+  }
+
+  &__title {
+    display: block;
+    font-family: $font-lato;
+    font-weight: $font-regular;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: $gray1;
+    margin: 24px 0 32px;
+  }
+
+  &__list {
+    flex-grow: 1;
+     margin: 0 0 32px;
+     padding-left: 0;
+
+    li {
+      display: block;
+      font-family: $font-roboto;
+      font-weight: $font-light;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: $gray1;
+      margin-bottom: 8px;
+      @include tablet {
+        display: inline-block;
+      }
+
+      &::before {
+        @include icon-font;
+        content: '\e91c';
+        color: $red;
+        margin-right: 5px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

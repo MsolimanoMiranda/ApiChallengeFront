@@ -1,0 +1,674 @@
+.pdf {
+    padding: 30px 180px 180px 180px;
+    font-family: "lato";
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 170px;
+    width: 300px;
+}
+
+.pdf__info__bottom {
+    border: 2px #EDEFF5 solid;
+    padding: 50px 50px;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.pdf__info__item.is-bigger .pdf__info__value {
+    font-size: 18px;
+}
+
+.pdf__info__item {
+    float: left;
+    margin-bottom: 26px;
+    width: 25%;
+}
+
+.pdf__info__item_w100 {
+    margin-bottom: 10px;
+}
+
+.pdf__info__item.no-border {
+    margin-bottom: 0;
+}
+
+.pdf__info__item.is-bigger {
+    width: 100%;
+    float: none;
+}
+
+.pdf__info__item.is-bigger .pdf__info__value {
+    font-size: 20px;
+}
+
+.pdf__info__value {
+    display: block;
+    color: #494F66;
+    font-size: 14px;
+    font-family: "lato";
+    font-weight: 400;
+    word-break: break-word;
+}
+
+
+/* 
+.pdf_flexi_anual {
+    padding: 2px 16px;
+    background: #CFEDC0;
+    border-radius: 16px;
+    display:inline-block;
+    color: #494F66;
+    font-size: 14px;
+    font-family: "lato";
+    font-weight: 400;
+    word-break: break-word;
+    
+    }
+    
+    .content {
+    padding: 0 32px 24px;
+    font-family:  "lato";
+    }
+    
+    .pdf__header {
+    background-color: #EF3340;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 32px;
+    }
+    
+    .pdf .title {
+    clear: both;
+    font-size: 26px;
+    line-height: 30px;
+    font-family: “lato”;
+    font-weight: 300;
+    letter-spacing: -0.2px;
+    color: #494F66;
+    margin: 0;
+    padding: 35px 0 6px;
+    }
+    
+    .pdf .title strong {
+    font-weight: 400;
+    color: #EF3340;
+    display: inline-block;
+    }
+    
+    .pdf .title.is-xlarge {
+    font-size: 34px;
+    }
+    
+    .pdf .title.is-large {
+    font-size: 30px;
+    }
+    
+    .pdf .title.is-medium {
+    font-size: 20px;
+    }
+    
+    .pdf .title.is-small {
+    font-size: 16px;
+    }
+    
+    .pdf .subtitle {
+    font-family: "lato";
+    font-weight: 300;
+    font-size: 14px;
+    color: #494F66;
+    }
+    
+    .pdf__info {
+    border: 3px #EDEFF5 solid;
+    border-radius: 8px;
+    margin: 28px 0 0;
+    }
+    
+    .pdf__info::after {
+    content: '';
+    display: table;
+    clear: both;
+    }
+    
+    .pdf__info__title {
+    display: block;
+    color: #676F8F;
+    font-size: 12px;
+    font-family: "lato";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    line-height: 16px;
+    }
+    
+    .pdf__info__value {
+    display: block;
+    color: #494F66;
+    font-size: 14px;
+    font-family: "lato";
+    font-weight: 400;
+    word-break: break-word;
+    }
+    
+    
+    .pdf__info__title_w100 {
+    color: #676F8F;
+    font-size: 12px;
+    font-family: "lato";
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    line-height: 16px;
+    }
+    
+    .pdf__info__value_w100 {
+    color: #494F66;
+    font-size: 14px;
+    font-family: "lato";
+    font-weight: 400;
+    word-break: break-word;
+    padding-left: 5px;
+    }
+    .pdf__info__item.is-bigger .pdf__info__value {
+    font-size: 18px;
+    }
+    
+    .pdf__info__desc {
+    display: block;
+    text-align: justify;
+    color: #494F66;
+    font-size: 13px;
+    font-family: “lato”;
+    font-weight: 400;
+    line-height: 18px;
+    }
+    
+    .pdf__info__item {
+    float: left;
+    margin-bottom: 26px;
+    width: 25%;
+    }
+    .pdf__info__item_w100 {
+    margin-bottom: 10px;
+    
+    }
+    
+    .pdf__info__item.no-border {
+    margin-bottom: 0;
+    }
+    
+    .pdf__info__item.is-bigger {
+    width: 100%;
+    float: none;
+    }
+    
+    .pdf__info__item.is-bigger .pdf__info__value {
+    font-size: 20px;
+    }
+    
+    .pdf__info__top {
+    padding: 25px 30px;
+    }
+    
+    .pdf__info__top::after {
+    content: '';
+    display: table;
+    clear: both;
+    }
+    
+    .pdf__info__bottom {
+    border-top: 1px #EDEFF5 solid;
+    padding: 25px 30px;
+    }
+    
+    .pdf__info__bottom::after {
+    content: '';
+    display: table;
+    clear: both;
+    }
+    
+    .pdf__card {
+    padding: 25px 32px;
+    margin: 28px 32px 28px 0;
+    border: 3px #FAFAFC solid;
+    border-radius: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(50% - 16px);
+    float: left;
+    }
+    
+    .pdf__card.no-border {
+    margin: 28px 0 28px 0;
+    }
+    
+    .pdf__card img {
+    display: block;
+    width: 40px;
+    }
+    
+    .pdf__card h3 {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "lato";
+    color: #676F8F;
+    }
+    
+    .pdf__card span {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: "lato";
+    color: #EF3340;
+    }
+    
+    .pdf__card p {
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: #494F66;
+    }
+    
+    .pdf .disclaimer {
+    display: block;
+    font-size: 13px;
+    font-family: "lato";
+    font-weight: 400;
+    color: #494F66;
+    margin: 0 0 25px;
+    padding: 0;
+    line-height: 18px;
+    }
+    
+    .pdf .disclaimer.is-regular {
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 20px;
+    }
+    
+    .pdf__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    }
+    
+    .pdf__table th, .pdf__table__head {
+    font-family: "lato";
+    font-weight: 400;
+    color: #A9B1D1;
+    text-align: left;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    }
+    
+    .pdf__table th {
+    font-size: 12px;
+    }
+    
+    .pdf__table__head {
+    display: table-cell;
+    border-collapse: collapse;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    
+    .pdf__table__head th {
+    padding: 0;
+    }
+    
+    .pdf__table td {
+    font-family: "lato";
+    font-weight: 400;
+    font-size: 14px;
+    color: #494F66;
+    padding: 10px 0;
+    }
+    
+    .pdf__table td.is-bold {
+    font-weight: 600;
+    padding: 16px 0;
+    }
+    
+    .pdf__table td.is-red {
+    color: #EF3340;
+    }
+    
+    .pdf__table td.number {
+    padding: 10px 10px;
+    text-align: center;
+    vertical-align: top;
+    }
+    
+    .pdf__table td.resp {
+    padding-right: 15px;
+    min-width: 60px;
+    text-align: right;
+    pointer-events: none;
+    }
+    .pdf__table th.resp {
+    padding-right: 15px;
+    min-width: 60px;
+    text-align: right;
+    pointer-events: none;
+    }
+    
+    .pdf__table td.faq {
+    padding-right: 20px;
+    text-align: justify;
+    }
+    .pdf__table td.faq_moneda {
+    padding-right: 20px;
+    text-align: right;
+    }
+    
+    .pdf__table td.faq_moneda .inline {
+    white-space: nowrap;
+    display: inline-block;
+    }
+    
+    .pdf__table tr {
+    border-bottom: 1px #EDEFF5 solid;
+    }
+    
+    .pdf__table tr.no-border {
+    border-bottom: none;
+    }
+    
+    .pdf__table tr:last-child {
+    border-bottom: 0;
+    }
+    
+    .pdf__table tr.is-highlighted {
+    background-color: #FFDCA9;
+    border: none;
+    }
+    
+    .pdf__table tr.is-highlighted .no-padding {
+    padding-bottom: 0;
+    }
+    
+    .pdf__table tr.is-highlighted td {
+    padding: 18px 12px;
+    }
+    
+    .pdf__table tr.is-highlighted span {
+    font-size: 14px;
+    display: block;
+    color: #494F66;
+    }
+    
+    .pdf__table.is-secondary {
+    border-radius: 6px;
+    border-collapse: separate;
+    }
+    
+    .pdf__table.is-secondary td {
+    border-bottom: 1px #EDEFF5 solid;
+    padding: 14px 12px;
+    }
+    
+    .pdf__table.is-secondary th {
+    padding: 8px 12px;
+    }
+    
+    .pdf__table.is-secondary .is-highlighted {
+    padding: 0;
+    }
+    
+    .pdf__table.is-secondary .is-highlighted td {
+    border: none;
+    }
+    
+    .pdf .table-parent {
+    clear: both;
+    border: 3px #FAFAFC solid;
+    padding: 36px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    }
+    
+    .pdf__feature {
+    float: left;
+    text-align: center;
+    width: calc(25% - 12px);
+    margin-right: 12px;
+    padding: 32px 0 0;
+    }
+    
+    .pdf__feature img {
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 40px;
+    }
+    
+    .pdf__feature h3 {
+    display: block;
+    font-family: "lato";
+    font-weight: 400;
+    color: #494F66;
+    font-size: 14px;
+    padding: 0 20%;
+    margin: 0;
+    }
+    
+    .pdf__list {
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 24px;
+    margin-top: 28px;
+    list-style: none;
+    }
+    
+    .pdf__list::after {
+    content: '';
+    display: table;
+    clear: both;
+    }
+    
+    .pdf__list .left {
+    float: left;
+    width: 50%;
+    }
+    
+    .pdf__list .right {
+    float: right;
+    width: 50%;
+    }
+    
+    .pdf__list li {
+    width: calc(100% - 32px);
+    margin-right: 32px;
+    position: relative;
+    font-family: "lato";
+    font-weight: 300;
+    color: #494F66;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 12px;
+    }
+    
+    .pdf__list li i {
+    position: absolute;
+    display: block;
+    left: -16px;
+    top: 7px;
+    background-color: #EF3340;
+    border-radius: 100%;
+    height: 3px;
+    width: 3px;
+    }
+    
+    .pdf__feature-card {
+    float: left;
+    border-right: 2px #FAFAFC solid;
+    width: 33.3333333%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 56px 32px 0 32px;
+    position: relative;
+    margin-bottom: 24px;
+    }
+    
+    .pdf__feature-card:last-child {
+    border-right: none;
+    }
+    
+    .pdf__feature-card__label {
+    position: absolute;
+    top: 10px;
+    left: 32px;
+    text-transform: uppercase;
+    background-color: #EF3340;
+    color: white;
+    font-weight: 600;
+    font-family: "lato";
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    }
+    
+    .pdf__feature-card__img {
+    display: block;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: gray;
+    }
+    
+    .pdf__feature-card__title {
+    display: block;
+    font-family: "lato";
+    font-weight: 400;
+    color: #494F66;
+    font-size: 16px;
+    }
+    
+    .pdf__feature-card__title strong {
+    color: #EF3340;
+    }
+    
+    .pdf__feature-card__text {
+    display: block;
+    font-family: "lato";
+    font-weight: 300;
+    color: #494F66;
+    font-size: 16px;
+    }
+    
+    .pdf__info__do {
+      padding-bottom: 10px;
+      clear: both;
+    }
+    
+    .pdf__info__do  .pdf__info__title {
+      float: left;
+      width: 33%;
+    }
+    
+    .pdf__info__do  .pdf__info__value {
+      float: left;
+      width: 66%;
+    }
+    
+    .pdf__info__w50 {
+    float: left;
+    width: 50%;
+    }
+    
+    .pdf__info__w50 .pdf__info__item {
+    width: 100%;
+    margin-bottom: 5px;
+    }
+    
+    .pdf__info__w50 .pdf__info__title {
+    display: inline-block;
+    padding-right: 10px;
+    }
+    
+    .pdf__info__w50 .pdf__info__value {
+    display: inline-block;
+    }
+    
+    
+    
+    .pdf__info__w100 {
+    float: left;
+    width: 100%;
+    }
+    
+    .pdf__info__w100 .pdf__info__item {
+    width: 100%;
+    margin-bottom: 5px;
+    }
+    
+    .pdf__info__w100 .pdf__info__title {
+    padding-right: 10px;
+    }
+    
+    .pdf__info__w100 .pdf__info__value {
+    
+    }
+    
+    .pdf .pdf__info__item.w33 {
+    width: 33.333333%;
+    }
+    .pdf .pdf__info__item.w25 {
+    width: 25%;
+    }
+    
+    .pdf .note {
+    clear: both;
+    font-size: 13px;
+    padding-top: 15px;
+    color: #494F66;
+    }
+    
+    .pdf .firma {
+    margin-top: 40px;
+    color: #494F66;
+    text-align: center;
+    font-size: 14px;
+    }
+    
+    .pdf .firma > div {
+    float: right;
+    width: 250px;
+    }
+  
+    .pdf .firma > div:first-child {
+      float: left; 
+    }
+    
+    .pdf .firma .line {
+    height: 40px;
+    border-bottom: 1px solid #A9B1D1;
+    margin-bottom: 5px;
+    }
+    
+    .pdf .firma span {
+    display: block;
+    text-align: left;
+    padding-top: 5px;
+    }
+    
+    .pdf .pt30 {
+    padding-top: 30px;
+    text-align: justify;
+    }
+    
+    @media print {
+    .pdf .newpage {
+      page-break-before: always;
+    }
+    }
+    
+      
+   */

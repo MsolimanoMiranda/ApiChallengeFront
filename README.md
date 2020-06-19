@@ -9,5 +9,8 @@ $ cd ApiChallengeFront
 $ npm install
 $ npm start
 
+# Using Docker
+$ docker-compose up
+
 ```
 

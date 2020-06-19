@@ -149,7 +149,7 @@ const TabContent1 = (props: any) => {
 
                               <Form.Row>
                                 <Form.Group as={Col} md="12" controlId="validationPuntuacion">
-                                  <Form.Label>Puntuacíon</Form.Label>
+                                  <Form.Label>Puntuación</Form.Label>
                                   &nbsp;&nbsp;
                                   {puntuaciones.map((item:any, idx:number) => {
                                                     return(
@@ -258,6 +258,7 @@ const TabContent1 = (props: any) => {
                     className="datepicker"
                     selected={fechaini}
                     onChange={changeFechaini}
+                    
                   />&nbsp;
 
                     <label>Fecha Fin </label> <DatePicker
